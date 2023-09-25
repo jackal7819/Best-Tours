@@ -264,6 +264,7 @@ main {
     padding: 2rem 0;
     display: grid;
     gap: 2rem;
+    justify-content: center;
 }
 
 .single-tour {
@@ -272,6 +273,7 @@ main {
     box-shadow: var(--shadow-1);
     transition: var(--transition);
     position: relative;
+    max-width: 400px;
 }
 
 .single-tour:hover {
@@ -303,6 +305,10 @@ main {
     margin-bottom: 1rem;
     font-weight: 500;
     line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 80vw;
 }
 .tour-info p {
     margin-bottom: 1.25rem;
@@ -319,6 +325,7 @@ main {
 .info-btn {
     color: var(--primary-500);
     font-weight: 600;
+    margin-left: 0.25rem;
 }
 
 .delete-btn {
@@ -328,6 +335,9 @@ main {
 .delete-btn:hover {
     background: var(--primary-500);
     color: var(--white);
+}
+.btn-refresh {
+    margin-top: 5rem;
 }
 
 @media screen and (min-width: 768px) {
